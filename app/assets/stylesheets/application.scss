@@ -96,6 +96,7 @@ form.button_to {
   top: 0;
   z-index: 900;
   font-weight: 700;
+  margin-bottom: 10px;
 
   .navbar-brand {
     font-weight: 900;
@@ -114,4 +115,45 @@ form.button_to {
 
 .orders-show {
   margin-bottom: 10px;
+}
+
+.btn {
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: rgba(0, 130, 29, 0.7);
+  border: 2px solid rgba(0, 130, 29, 0.7);
+}
+
+.btn-primary:hover {
+  background: white;
+  color: rgba(0, 130, 29, 0.7);
+  border: 2px solid rgba(0, 130, 29, 0.7);
+}
+
+.btn-primary:active {
+  color: white;
+  background: rgba(0, 130, 29, 0.7);
+  border: 2px solid rgba(0, 130, 29, 0.7);
+}
+
+.admin-dashboard-card {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.card-text {
+  font-family: "Montserrat";
+  font-size: xx-large;
 }
