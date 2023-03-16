@@ -1,0 +1,21 @@
+<h1>Signup!</h1>
+
+
+
+<%= form_for :user, url: users_path do |form| %>
+  
+  <% if params[:error] %>
+  <div class="alert alert-danger" role="error">
+    Error: <%= params[:error] %><br>
+  </div>
+<% end %>
+      
+  
+  First Name: <%= form.text_field :first_name %>
+  Last Name: <%= form.text_field :last_name %>
+  Email: <%= form.text_field :email %>
+  Password: <%= form.password_field :password %>
+  Password Confirmation: <%= form.password_field :password_confirmation %>
+  <%= form.submit "Submit" %>
+
+<% end %>
